@@ -63,7 +63,7 @@
       if (!isDown) return; // stop the func
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 2;
+      const walk = x - startX;
       slider.scrollLeft = scrollLeft - walk;
       console.log(startX)
     });
